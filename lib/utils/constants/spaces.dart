@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
 // Vertical Spacings
-const pVSpace8 = SizedBox(height: 8);
-const pVSpace16 = SizedBox(height: 16);
-const pVSpace24 = SizedBox(height: 24);
-const pVSpace32 = SizedBox(height: 32);
-const pVSpace64 = SizedBox(height: 64);
-const pVSpace128 = SizedBox(height: 128);
+const kVSpace8 = SizedBox(height: 8);
+const kVSpace16 = SizedBox(height: 16);
+const kVSpace24 = SizedBox(height: 24);
+const kVSpace32 = SizedBox(height: 32);
+const kVSpace64 = SizedBox(height: 64);
+const kVSpace128 = SizedBox(height: 128);
 
 // Horizontal Spacings
-const pHSpace8 = SizedBox(width: 8);
-const pHSpace16 = SizedBox(width: 16);
-const pHSpace24 = SizedBox(width: 24);
-const pHSpace32 = SizedBox(width: 32);
-const pHSpace64 = SizedBox(width: 64);
-const pHSpace128 = SizedBox(width: 128);
+const kHSpace8 = SizedBox(width: 8);
+const kHSpace16 = SizedBox(width: 16);
+const kHSpace24 = SizedBox(width: 24);
+const kHSpace32 = SizedBox(width: 32);
+const kHSpace64 = SizedBox(width: 64);
+const kHSpace128 = SizedBox(width: 128);
