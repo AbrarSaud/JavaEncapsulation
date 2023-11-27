@@ -18,7 +18,14 @@ class AthkarCard extends StatelessWidget {
       body: ListView.builder(
           itemCount: checkedId.length,
           itemBuilder: (context, index) {
-            return Text(checkedId.length.toString());
+            return Card(
+              margin: EdgeInsets.all(8.0),
+              elevation: 5.0,
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(checkedId[index].text!),
+              ),
+            );
           }),
     );
   }
