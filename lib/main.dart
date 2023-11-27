@@ -6,11 +6,9 @@ import 'package:flutter/material.dart';
 List<AthkarData> listAthkarData = [];
 
 void main() {
-
-    for (var element in listAthkar["itemsData"]) {
+  for (var element in listAthkar["itemsData"]) {
     listAthkarData.add(AthkarData.fromJson(element));
   }
-
 
   runApp(const MainApp());
 }
@@ -21,6 +19,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     );
   }

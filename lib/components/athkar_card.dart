@@ -19,7 +19,7 @@ class AthkarCard extends StatelessWidget {
           itemCount: checkedId.length,
           itemBuilder: (context, index) {
             return Card(
-              margin: EdgeInsets.all(8.0),
+              margin: const EdgeInsets.all(8.0),
               elevation: 5.0,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),

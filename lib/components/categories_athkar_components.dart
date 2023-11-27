@@ -1,5 +1,7 @@
 import 'package:athkar_app/components/athkar_card.dart';
+import 'package:athkar_app/shared/container_decoration_style.dart';
 import 'package:athkar_app/utils/constants/spaces.dart';
+import 'package:athkar_app/utils/extension/screen_size.dart';
 import 'package:flutter/material.dart';
 
 class CategoriesAthkarComponents extends StatelessWidget {
@@ -26,16 +28,13 @@ class CategoriesAthkarComponents extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(bottom: 12.0),
         child: Container(
-          decoration: BoxDecoration(
-              color: Colors.grey[200],
-              border: Border.all(color: Colors.white),
-              borderRadius: BorderRadius.circular(8)),
+          decoration: boxDecorationStyle,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
-                height: 100,
-                padding: EdgeInsets.all(7),
+                height: context.getHeight * 0.12,
+                padding: const EdgeInsets.all(7),
                 child: Image.network(image),
               ),
               kHSpace16,
@@ -46,8 +45,10 @@ class CategoriesAthkarComponents extends StatelessWidget {
                     alignment: Alignment.bottomCenter,
                     child: Text(
                       athkarName,
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                      style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                          fontFamily: "DINNext_R"),
                     ),
                   )
                 ],
