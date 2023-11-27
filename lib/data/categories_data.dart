@@ -1,4 +1,3 @@
-import 'package:athkar_app/model/category_data.dart';
 
 List categoriesData = [
   [
