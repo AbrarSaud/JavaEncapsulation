@@ -14,7 +14,6 @@ class HomeComponent extends StatelessWidget {
       backgroundColor: white,
       body: SafeArea(
         child: Column(children: [
-          kVSpace32,
           const CardComponent(),
           kVSpace24,
           Expanded(
