@@ -1,43 +1,62 @@
+import 'package:athkar_app/utils/constants/athkar_icons.dart';
+import 'package:athkar_app/utils/constants/colors.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:line_icons/line_icons.dart';
 
 List categoriesData = [
   [
     "c1",
-    "أذكار الصباح",
-    "https://cdn-icons-png.flaticon.com/256/10912/10912032.png",
+    "أذكار \n الصباح",
+    Icon(
+      Icons.wb_sunny_outlined,
+      color: white,
+      size: 25,
+    )
   ],
   [
     "c2",
-    "أذكار المساء",
-    "https://cdn-icons-png.flaticon.com/256/12402/12402486.png",
+    "أذكار  \nالمساء",
+    Icon(
+      LineIcons.moon,
+      size: 30,
+      color: white,
+    )
   ],
   [
     "c3",
-    "أذكار النوم",
-    "https://cdn-icons-png.flaticon.com/256/2829/2829069.png",
+    "أذكار  \nالمسجد",
+    Icon(
+      Athkar.mosque,
+      size: 40,
+      color: white,
+    )
   ],
   [
     "c4",
-    "أذكار الصلاة",
-    "https://cdn-icons-png.flaticon.com/256/384/384373.png",
+    "أذكار  \nالصلاة",
+    Icon(
+      Athkar.pray,
+      size: 40,
+      color: white,
+    )
   ],
   [
     "c5",
-    "أذكار المسجد",
-    "https://cdn-icons-png.flaticon.com/256/10031/10031048.png",
+    "أذكار \n النوم",
+    Icon(
+      Athkar.sleep,
+      size: 35,
+      color: white,
+    )
   ],
-  // [
-  //   "c5",
-  //  "أذكار المسجد",
-  //   "https://cdn-icons-png.flaticon.com/256/10912/10912032.png",
-  // ],
-
-//   Category(
-//     id: "c5",
-//     title: "أذكار المسجد",
-//     imageUrl: "https://cdn-icons-png.flaticon.com/256/10912/10912032.png",
-//   ),
-//   Category(
-//     id: "c6",
-//     title: "أذكار الوضوء",
-//   ),
+  [
+    "c6",
+    "أذكار  \nالاستيقاظ",
+    Icon(
+      Athkar.wake_up,
+      size: 45,
+      color: white,
+    )
+  ],
 ];

@@ -20,7 +20,7 @@ class AppBarComponent extends StatelessWidget implements PreferredSizeWidget {
       title: Text(
         title,
         style: headerStyle.copyWith(
-            color: primary, fontWeight: FontWeight.w900, fontSize: 20),
+            color: primary, fontWeight: FontWeight.w900, fontSize: 22),
       ),
     );
   }

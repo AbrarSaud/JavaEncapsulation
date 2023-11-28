@@ -1,4 +1,3 @@
-import 'package:athkar_app/components/app_bar_component.dart';
 import 'package:athkar_app/components/home_component.dart';
 import 'package:athkar_app/components/nav_destination_components.dart';
 import 'package:athkar_app/screens/prayers_screen.dart';
@@ -27,15 +26,13 @@ class _HomeScreenState extends State<HomeScreen> {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Scaffold(
-          appBar: const AppBarComponent(
-            title: 'الأذكـار',
-          ),
           backgroundColor: backgroundColor,
           body: screens[index],
           bottomNavigationBar: NavigationBar(
               indicatorColor: transparent,
+              backgroundColor: white,
               selectedIndex: index,
-              elevation: 8,
+              elevation: 20,
               onDestinationSelected: (index) =>
                   setState(() => this.index = index),
               height: 70,

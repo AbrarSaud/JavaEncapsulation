@@ -11,28 +11,39 @@ class CardComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25.0),
-      child: ClipRRect(
+      child: Material(
         borderRadius: BorderRadius.circular(20),
-        child: Stack(
-          children: [
-            Image.asset(
-              "assets/images/background.jpg",
-              height: context.getHeight * 0.12,
-              width: context.getWidth * 0.9,
-              fit: BoxFit.cover,
-            ),
-            Container(
-              width: context.getWidth * 0.9,
-              height: context.getHeight * 0.12,
-              padding: const EdgeInsets.all(10),
-              alignment: Alignment.center,
-              // ignore: sort_child_properties_last
-              child: Text("احفَظِ اللَّهَ تَجِدْهُ تجاهَكَ",
+        elevation: 15,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(20),
+          child: Stack(
+            children: [
+              Image.asset(
+                "assets/images/background.jpg",
+                height: context.getHeight * 0.12,
+                width: context.getWidth * 0.9,
+                fit: BoxFit.cover,
+              ),
+              Container(
+                width: context.getWidth * 0.9,
+                height: context.getHeight * 0.12,
+                padding: const EdgeInsets.all(10),
+                alignment: Alignment.center,
+                // ignore: sort_child_properties_last
+                child: Text(
+                  "احفَظِ اللَّهَ تَجِدْهُ تجاهَكَ",
                   style: headerStyle.copyWith(
-                      color: white, fontSize: 20, fontWeight: FontWeight.bold)),
-              decoration: BoxDecoration(gradient: linearGradientStyle),
-            )
-          ],
+                    color: white,
+                    fontSize: 22,
+                    // fontWeight: FontWeight.bold
+                  ),
+                ),
+                decoration: BoxDecoration(
+                  gradient: linearGradientStyle,
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
