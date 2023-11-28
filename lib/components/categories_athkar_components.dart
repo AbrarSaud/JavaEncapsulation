@@ -32,12 +32,6 @@ class CategoriesAthkarComponents extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                height: context.getHeight * 0.12,
-                padding: const EdgeInsets.all(7),
-                child: Image.network(image),
-              ),
-              kHSpace16,
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -52,7 +46,13 @@ class CategoriesAthkarComponents extends StatelessWidget {
                     ),
                   )
                 ],
-              )
+              ),
+              kHSpace16,
+              Container(
+                height: context.getHeight * 0.12,
+                padding: const EdgeInsets.all(7),
+                child: Image.network(image),
+              ),
             ],
           ),
         ),

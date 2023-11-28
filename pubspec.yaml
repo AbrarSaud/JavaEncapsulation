@@ -9,7 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.9
   google_nav_bar: ^5.0.6
+  iconsax: ^0.0.8
 
 dev_dependencies:
   flutter_test:
@@ -28,3 +30,6 @@ flutter:
     - family: DINNext_M
       fonts:
         - asset: assets/fonts/DINNextLTArabic-Medium-4.ttf
+    - family: Athkar
+      fonts:
+        - asset: assets/fonts/Athkar.ttf
