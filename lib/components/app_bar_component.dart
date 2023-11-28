@@ -1,17 +1,15 @@
-
-
-
-
+import 'package:athkar_app/shared/txt_style.dart';
 import 'package:athkar_app/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class AppBarComponent extends StatelessWidget  implements PreferredSizeWidget {
+class AppBarComponent extends StatelessWidget implements PreferredSizeWidget {
   const AppBarComponent({
-    super.key, required this.title,
+    super.key,
+    required this.title,
   });
   final String title;
-   Size get preferredSize => Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => Size.fromHeight(kToolbarHeight);
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +18,9 @@ class AppBarComponent extends StatelessWidget  implements PreferredSizeWidget {
       centerTitle: true,
       elevation: 0,
       title: Text(
-       title,
-        style: TextStyle(color: primary),
+        title,
+        style: headerStyle.copyWith(
+            color: primary, fontWeight: FontWeight.w900, fontSize: 20),
       ),
     );
   }

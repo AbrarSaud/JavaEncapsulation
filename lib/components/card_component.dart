@@ -1,4 +1,5 @@
 import 'package:athkar_app/shared/container_decoration_style.dart';
+import 'package:athkar_app/shared/txt_style.dart';
 import 'package:athkar_app/utils/constants/colors.dart';
 import 'package:athkar_app/utils/extension/screen_size.dart';
 import 'package:flutter/material.dart';
@@ -25,11 +26,10 @@ class CardComponent extends StatelessWidget {
               height: context.getHeight * 0.12,
               padding: const EdgeInsets.all(10),
               alignment: Alignment.center,
-              child: Text(
-                "احفَظِ اللَّهَ تَجِدْهُ تجاهَكَ",
-                style: TextStyle(
-                    fontSize: 20, color: white, fontFamily: "DINNext_R"),
-              ),
+              // ignore: sort_child_properties_last
+              child: Text("احفَظِ اللَّهَ تَجِدْهُ تجاهَكَ",
+                  style: headerStyle.copyWith(
+                      color: white, fontSize: 20, fontWeight: FontWeight.bold)),
               decoration: BoxDecoration(gradient: linearGradientStyle),
             )
           ],

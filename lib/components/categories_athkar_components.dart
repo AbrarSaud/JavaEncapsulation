@@ -1,5 +1,6 @@
 import 'package:athkar_app/components/athkar_card.dart';
 import 'package:athkar_app/shared/container_decoration_style.dart';
+import 'package:athkar_app/shared/txt_style.dart';
 import 'package:athkar_app/utils/constants/spaces.dart';
 import 'package:athkar_app/utils/extension/screen_size.dart';
 import 'package:flutter/material.dart';
@@ -39,10 +40,9 @@ class CategoriesAthkarComponents extends StatelessWidget {
                     alignment: Alignment.bottomCenter,
                     child: Text(
                       athkarName,
-                      style: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                          fontFamily: "DINNext_R"),
+                      style: headerStyle.copyWith(
+                        fontWeight: FontWeight.w900,
+                      ),
                     ),
                   )
                 ],
