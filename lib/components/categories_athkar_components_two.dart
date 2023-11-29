@@ -5,8 +5,8 @@ import 'package:athkar_app/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class CategoriesAthkarComponentsTwe extends StatelessWidget {
-  const CategoriesAthkarComponentsTwe(
+class CategoriesAthkarComponent extends StatelessWidget {
+  const CategoriesAthkarComponent(
       {super.key,
       required this.athkarName,
       required this.icon,

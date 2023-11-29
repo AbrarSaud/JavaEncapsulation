@@ -31,7 +31,7 @@ class HomeComponent extends StatelessWidget {
                             mainAxisSpacing: 5,
                             crossAxisSpacing: 15),
                     itemBuilder: (BuildContext context, int index) {
-                      return CategoriesAthkarComponentsTwe(
+                      return CategoriesAthkarComponent(
                         athkarId: categoriesData[index][0],
                         athkarName: categoriesData[index][1],
                         icon: categoriesData[index][2],
@@ -44,14 +44,3 @@ class HomeComponent extends StatelessWidget {
     );
   }
 }
-//  ListView.builder(
-//                 itemCount: categoriesData.length,
-//                 itemBuilder: (context, index) {
-//                   return const CategoriesAthkarComponentsTwe();
-//                 }),
-
-// CategoriesAthkarComponents(
-//                     athkarId: categoriesData[index][0],
-//                     athkarName: categoriesData[index][1],
-//                     image: categoriesData[index][2],
-//                   )
