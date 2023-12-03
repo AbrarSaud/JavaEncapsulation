@@ -9,6 +9,7 @@ class NavDestinationComponents extends StatelessWidget {
   Widget build(BuildContext context) {
     return NavigationDestination(
       icon: icon,
+      // SvgPicture.asset(
       selectedIcon: selectedIcon,
       label: "",
     );
