@@ -38,43 +38,20 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 70,
               destinations: const [
                 NavDestinationComponents(
-                  icon: Icon(Athkar.noun_apps_3815026),
-                  selectedIcon: Icon(
-                    Athkar.noun_apps_3815026,
-                    color: primary,
-                    size: 30,
-                  ),
+                  assetName: 'assets/icons/apps_outlined.svg',
+                  selectedSssetName: 'assets/icons/apps.svg',
                 ),
                 NavDestinationComponents(
-                  icon: Icon(
-                    Athkar.noun_clock_6325699,
-                    size: 35,
-                  ),
-                  selectedIcon: Icon(
-                    Athkar.noun_clock_6325712,
-                    color: primary,
-                    size: 35,
-                  ),
+                  assetName: 'assets/icons/clock_outlined.svg',
+                  selectedSssetName: 'assets/icons/clock.svg',
                 ),
                 NavDestinationComponents(
-                  icon: Icon(
-                    Athkar.noun_compass_6324639,
-                    size: 35,
-                  ),
-                  selectedIcon: Icon(
-                    Athkar.noun_compass_6324606,
-                    size: 45,
-                    color: primary,
-                  ),
+                  assetName: 'assets/icons/compass_outlined.svg',
+                  selectedSssetName: 'assets/icons/compass.svg',
                 ),
                 NavDestinationComponents(
-                  icon: Icon(
-                    Icons.settings_outlined,
-                  ),
-                  selectedIcon: Icon(
-                    Icons.settings,
-                    color: primary,
-                  ),
+                  assetName: 'assets/icons/settings_outlined.svg',
+                  selectedSssetName: 'assets/icons/settings.svg',
                 ),
               ])),
     );

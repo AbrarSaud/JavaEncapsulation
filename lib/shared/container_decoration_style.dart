@@ -23,3 +23,6 @@ var cardLinearGradientStyle = LinearGradient(
     secondONE.withOpacity(0.7),
   ],
 );
+
+var navBarboxDecoration =
+    BoxDecoration(color: white, borderRadius: BorderRadius.all(Radius.circular(24)));
