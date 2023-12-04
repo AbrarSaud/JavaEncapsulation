@@ -1,6 +1,6 @@
 import 'package:athkar_app/data/app_data.dart';
 import 'package:athkar_app/model/athkar_data.dart';
-import 'package:athkar_app/screens/home_screen.dart';
+import 'package:athkar_app/screens/nav_bar_screen.dart';
 import 'package:flutter/material.dart';
 
 List<AthkarData> listAthkarData = [];
@@ -20,7 +20,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: NavBarScreen(),
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:athkar_app/main.dart';
 import 'package:athkar_app/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
-// AthkarIcons
+
 class AthkarCard extends StatelessWidget {
   const AthkarCard(
       {super.key, required this.athkarId, required this.athkarName});
