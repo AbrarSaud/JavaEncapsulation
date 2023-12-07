@@ -15,6 +15,7 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: white,
       appBar: const AppBarComponent(
         title: 'الأذكـار',
+        isBackButton: false,
       ),
       body: SafeArea(
         child: Column(children: [
@@ -35,6 +36,7 @@ class HomeScreen extends StatelessWidget {
                         athkarId: categoriesData[index][0],
                         athkarName: categoriesData[index][1],
                         icon: categoriesData[index][2],
+                        athkarTitle: categoriesData[index][3],
                       );
                     },
                     itemCount: categoriesData.length,

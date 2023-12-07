@@ -12,7 +12,8 @@ List categoriesData = [
       Icons.wb_sunny_outlined,
       color: white,
       size: 25,
-    )
+    ),
+    "أذكار الصباح",
   ],
   [
     "c2",
@@ -21,7 +22,8 @@ List categoriesData = [
       LineIcons.moon,
       size: 30,
       color: white,
-    )
+    ),
+    "أذكار المساء",
   ],
   [
     "c3",
@@ -30,7 +32,8 @@ List categoriesData = [
       Athkar.mosque,
       size: 40,
       color: white,
-    )
+    ),
+    "أذكار المسجد",
   ],
   [
     "c4",
@@ -39,7 +42,8 @@ List categoriesData = [
       Athkar.pray,
       size: 40,
       color: white,
-    )
+    ),
+    "أذكار  الصلاة",
   ],
   [
     "c5",
@@ -48,7 +52,8 @@ List categoriesData = [
       Athkar.sleep,
       size: 35,
       color: white,
-    )
+    ),
+    "أذكار  النوم",
   ],
   [
     "c6",
@@ -57,6 +62,7 @@ List categoriesData = [
       Athkar.wake_up,
       size: 45,
       color: white,
-    )
+    ),
+    "أذكار  الاستيقاظ",
   ],
 ];

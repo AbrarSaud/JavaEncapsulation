@@ -6,9 +6,10 @@ import 'package:flutter/widgets.dart';
 class AppBarComponent extends StatelessWidget implements PreferredSizeWidget {
   const AppBarComponent({
     super.key,
-    required this.title,
+    required this.title, required this.isBackButton,
   });
   final String title;
+  final bool isBackButton;
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
 
   @override
@@ -17,6 +18,10 @@ class AppBarComponent extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: white,
       centerTitle: true,
       elevation: 0,
+      leading: isBackButton ?  BackButton(
+        color: primary,
+      ) : Container() ,
+      
       title: Text(
         title,
         style: headerStyle.copyWith(

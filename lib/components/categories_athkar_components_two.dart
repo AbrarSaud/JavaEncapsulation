@@ -10,10 +10,11 @@ class CategoriesAthkarComponent extends StatelessWidget {
       {super.key,
       required this.athkarName,
       required this.icon,
-      required this.athkarId});
+      required this.athkarId, required this.athkarTitle});
   final String athkarName;
   final Widget icon;
   final String athkarId;
+  final String athkarTitle;
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -21,7 +22,7 @@ class CategoriesAthkarComponent extends StatelessWidget {
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => AthkarCard(
             athkarId: athkarId,
-            athkarName: athkarName,
+            athkarName: athkarTitle,
           ),
         ));
       },

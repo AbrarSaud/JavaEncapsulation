@@ -26,3 +26,10 @@ var cardLinearGradientStyle = LinearGradient(
 
 var navBarboxDecoration =
     BoxDecoration(color: white, borderRadius: BorderRadius.all(Radius.circular(24)));
+
+    var borderRadiusOfAthkarCard = RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(60),
+                          bottomRight: Radius.circular(40),
+                          topRight: Radius.circular(10),
+                          bottomLeft: Radius.circular(10)));
