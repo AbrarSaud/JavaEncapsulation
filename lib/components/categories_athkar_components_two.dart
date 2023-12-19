@@ -10,7 +10,7 @@ class CategoriesAthkarComponent extends StatelessWidget {
       {super.key,
       required this.athkarName,
       required this.icon,
-      required this.athkarId, required this.athkarTitle});
+      required this.athkarId, required this.athkarTitle, });
   final String athkarName;
   final Widget icon;
   final String athkarId;
