@@ -1,0 +1,33 @@
+.ropdownbutton {
+  background-color: hotpink;
+  color: white;
+  font-size: 20px;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: lightpink;
+  min-width: 186px;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: pink;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown:hover .ropdownbutton {
+  background-color: palevioletred;
+}
