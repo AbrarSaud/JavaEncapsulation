@@ -1,88 +1,89 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>My page</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <div
-      style="
-        background-color: silver;
-        text-align: center;
-        padding: 8px;
-        margin-bottom: 20px;
-      "
-    >
-      <h1>My Onine Store</h1>
+    <div class="main-heade">
+      <div class="header">
+        <img id="header-image" src="img/header.jpeg" alt="header img" />
+        <div id="cover"></div>
+        <div id="menu-header">
+          <div id="menu">
+            <a class="btn active" href="#">الرئيسية</a>
+            <a class="btn" href="#">دورات</a>
+            <a class="btn" href="#">مقالات</a>
+            <a class="btn" href="#">ملخصات</a>
+            <a class="btn" href="#">مصارد</a>
+          </div>
+        </div>
+      </div>
+      <div id="main_content">
+        <div id="centerd-content">
+          <h1>مرحبـا بكم</h1>
+          <div id="img-frame">
+            <img src="img/logo.png" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
-    <table border="2" style="width: 90%; text-align: center; margin: 0 auto">
-      <tr>
-        <th>Item</th>
-        <th>Imae</th>
-        <th>Price</th>
-        <th>Link</th>
-      </tr>
-      <tr>
-        <td>iPhon</td>
-        <td>
-          <img
-            style="width: 30%"
-            src="https://coolstuf.com.pg/wp-content/uploads/2022/10/iPhone-14-PRO-MAX-model-1.jpg"
-          />
-        </td>
-        <td>500$</td>
-        <td>
-          <a href="https://www.apple.com/sa-ar/">Apple.com</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Samsung</td>
-        <td>
-          <img
-            style="width: 30%"
-            src="https://www.pngall.com/wp-content/uploads/13/Samsung-Galaxy-PNG-Clipart.png"
-          />
-        </td>
-        <td>300$</td>
-        <td>
-          <a
-            href="https://www.samsung.com/sa/smartphones/galaxy-s24-ultra/?page=home"
-            >Samsung.com</a
-          >
-        </td>
-      </tr>
-      <tr>
-        <td>One Plus</td>
-        <td>
-          <img
-            style="width: 30%"
-            src="https://oasis.opstatics.com/content/dam/oasis/page/2021/9-series/spec-image/9/Arcticsky_9.png"
-          />
-        </td>
-        <td>350$</td>
-        <td>
-          <a href="https://www.oneplus.com/sa">OnePlus.com</a>
-        </td>
-      </tr>
-    </table>
-    <br />
-    <div style="background-color: silver; padding: 8px">
-      <h2>Request Your Device Now!</h2>
-      <form action="https://www.google.com" method="post">
-        <label for="input-text">Name:</label>
-        <input type="text" id="input-text" placeholder="Your Name" required />
-        <label for="input-email">Email:</label>
-        <input
-          type="email"
-          id="input-email"
-          placeholder="Youremail@gmail.com"
-          required
-        />
-        <label for="input-date">Date of Birth:</label>
-        <input type="date" id="input-date" required />
-        <input type="submit" value="Submit" />
-      </form>
+    <div class="main-body">
+      <div id="main-header">
+        <h1>
+          هيا نتعلم البرمجة
+          <span>💻</span>
+        </h1>
+
+        <div id="features">
+          <div class="feature">
+            <h1><span>✔️</span>دروس منوعة</h1>
+          </div>
+          <div class="feature">
+            <h1><span>✔️</span>باللغة العربية</h1>
+          </div>
+          <div class="feature">
+            <h1><span>✔️</span>بجودة عالية</h1>
+          </div>
+        </div>
+      </div>
+
+      <div id="courses-section">
+        <h1> دورات تطوير المواقع</h1>
+        <div id="coursers">
+          <div class="courser">
+            <img src="img/html-course.png" alt="" />
+            <div>
+              <h2>سلسلة دروس الـ HTML
+              </h2>
+              <button>مشاهدة</button>
+            </div>
+          </div>
+          <div class="courser">
+            <img src="img/css-course.png" alt="" />
+            <div>
+              <h2>سلسلة دروس الـ CSS
+              </h2>
+              <button>مشاهدة</button>
+            </div>
+          </div>
+          <div class="courser">
+            <img src="img/git-course.png" alt="" />
+            <div>
+              <h2>سلسلة دروس الـ Git
+              </h2>
+              <button>مشاهدة</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
