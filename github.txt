@@ -1,0 +1,28 @@
+1- Fork the Repository.
+
+2- Clone in your device.
+
+QueenAbrar$20 >> رقم سري
+                                                                     git clone ...
+
+3- Go to the cloned project and open it in VSCode. الامتداد
+                                                                        cd <PROJECT-NAME>/
+3- Create a new branch (your name) and checkout t                                                                                                                                                                   f                                                          git  checkout -b AbrarSaud 
+
+4- Add your files.                                                                                                                         انشاء ملف
+5- Add the new files to staging area.
+                                                                                                                                              f                                                                    git add .
+6- Commit your staged file.
+                                                                  git commit -m "adding Space App"
+7- Push your branch.
+                                                                   git push
+ --set-upstream origin firstname-lastname
+8- Create Pull Request to the original repository.
+--------------------
+ git commit -m" editing "
+git pull origin main
+
+git pull origin supabase
+ git  checkout -b LogIn-and-SignIn 
+git commit -m "add :LogIn, SignIn ,  layers screens and Profile Screen "
+supabase
