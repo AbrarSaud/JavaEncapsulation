@@ -16,5 +16,17 @@ public class Main {
         acc1.transferTo(acc2, 150);// Transfer 150 from Account 1 to Account 2
         System.out.println("Updated Account 1 :" + acc1.toString());
         System.out.println("Updated Account 2:" + acc2.toString());
+
+        /// -----------------------
+        System.out.println("\n");
+        // Employee Class -  Object
+        Employee emp = new Employee("100", "Abrar", 5000);
+        System.out.println("Employee info:" + emp.toString());
+        // Print the annual salary (monthly salary * 12)
+        System.out.println("Annual Salary: " + emp.getAnnualSalary());
+        emp.raisedSalary(15);// Increase salary by 15%
+        System.out.println("After Raise: " + emp);
+
+
     }
 }
