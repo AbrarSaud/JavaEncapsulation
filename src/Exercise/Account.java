@@ -28,7 +28,12 @@ public class Account {
     }
 
     public void setBalance(int balance) {
-        this.balance = balance;
+        if (balance >= 0) {
+            this.balance = balance;
+        } else {
+            System.out.println("Balance cannot be negative!");
+
+        }
     }
 
     // Getter methods
@@ -45,20 +50,40 @@ public class Account {
     }
 
     //  Methods
+    // Deposit money - الإيداع
     public int credit(int amount) {
-        return 1;
+        if (amount > 0) {
+            balance += amount;
+        } else {
+            System.out.println("Deposit must be more than 0!");
+        }
+        return balance;
     }
 
+    //    Withdraw money - السحب
     public int debit(int amount) {
-        return 1;
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+        } else {
+            System.out.println("Not enough money! Balance: " + balance + ", You want: " + amount);
+        }
+        return balance;
     }
 
+    // Transfer money to another account - التحويل
     public int transferTo(Account another, int amount) {
-        return 1;
+        if (amount > 0 && amount <= balance) {
+            this.balance -= amount;// Remove from this account
+            another.credit(amount);// Add to another account
+        } else {
+            System.out.println("Transfer failed! Balance: " + balance + ", You want: " + amount);
+        }
+
+        return balance;
     }
 
     public String toString() {
-        return "";
+        return "Account [id= " + id + ", name= " + name + ", balance= " + balance + "]";
     }
 
 
