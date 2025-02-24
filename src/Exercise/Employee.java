@@ -10,7 +10,7 @@ public class Employee {
     public Employee(String id, String name, int salary) {
         this.id = id;
         this.name = name;
-        this.salary = salary;
+        setSalary(salary); // Use setSalary to check for negative values
     }
 
 
@@ -24,7 +24,11 @@ public class Employee {
     }
 
     public void setSalary(int salary) {
-        this.salary = salary;
+        if (salary >= 0) {
+            this.salary = salary;
+        } else {
+            System.out.println("Salary cannot be negative!");
+        }
     }
 
     // Getter methods
@@ -40,16 +44,24 @@ public class Employee {
         return salary;
     }
 
+    //  Methods
+    // Method to get the annual salary (salary for 12 months)
     public int getAnnualSalary() {
-        return 1;
+        return salary * 12;
     }
 
+    // Method to increase the salary by a percentage
     public int raisedSalary(int percent) {
-        return 1;
+        if (percent > 0) {
+            salary += (salary * percent) / 100;
+        } else {
+            System.out.println("Raise percentage must be positive!");
+        }
+        return salary; // Return the new salary
     }
 
-    public String toStaring() {
-        return "";
+    public String toString() {
+        return "[id= " + id + ", name= " + name + ", Salary= " + salary + "]";
     }
 
 }
