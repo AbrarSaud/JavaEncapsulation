@@ -83,7 +83,7 @@ public class Account {
     }
 
     public String toString() {
-        return "Account [id= " + id + ", name= " + name + ", balance= " + balance + "]";
+        return "[id= " + id + ", name= " + name + ", balance= " + balance + "]";
     }
 
 
